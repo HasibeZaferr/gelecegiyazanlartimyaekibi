@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E6567A"
+    android:padding="16dp"
+    tools:context="com.hasibezafer.loginapp.MainActivity">
+
+
+    <ImageView
+        android:layout_marginTop="25dp"
+        android:id="@+id/imageView"
+        android:backgroundTint="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/user" />
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="20dp"
+        android:fontFamily="monospace"
+        android:textColor="#ffffff"
+        android:backgroundTint="#ffffff"
+        android:textColorHint="#ffffff"
+        android:hint="Adınızı Giriniz"
+        />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20dp"
+        android:fontFamily="monospace"
+        android:textColor="#ffffff"
+        android:backgroundTint="#ffffff"
+        android:textColorHint="#ffffff"
+        android:hint="Parolanızı Giriniz"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnSign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giriş"
+        android:background="#ffffff"
+        android:textColor="#44B39D"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_marginTop="8dp"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:id="@+id/textView"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="cursive"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cebinizdeki kisisel ajandanız." />
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#977BAB"
+    tools:context="com.hasibezafer.timyanoteapp.MainActivity"
+    android:weightSum="1">
+
+
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/ivLogo"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/pencil"
+        android:layout_weight="0.23" />
+
+    <LinearLayout
+        android:padding="12dp"
+        android:layout_marginTop="22dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:fontFamily="monospace"
+        android:textColor="#ffffff"
+        android:backgroundTint="#ffffff"
+        android:id="@+id/etUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColorHint="#ffffff"
+        android:hint="Adınızı Giriniz"/>
+
+    <EditText
+        android:fontFamily="monospace"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:backgroundTint="#ffffff"
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text=""
+        android:hint="Parolanızı Giriniz"/>
+
+    <Button
+        android:textStyle="bold"
+        android:textColor="#6F2480"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnSign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giriş" />
+
+        <Button
+            android:textStyle="bold"
+            android:textColor="#6F2480"
+            android:background="#ffffff"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KAYDOL" />
+
+    </LinearLayout>
+
+</LinearLayout>
